@@ -106,3 +106,6 @@ AS
           OR (max_stat - min_stat) >= NVL (swx_runstats_pkg.stat_delta_threshold (), avg_stat_delta)
           OR stat_type = 'TIME'
 /
+
+CREATE SYNONYM snaps_v FOR swx_snaps_v;
+CREATE SYNONYM snaps2_v FOR swx_snaps2_v;
